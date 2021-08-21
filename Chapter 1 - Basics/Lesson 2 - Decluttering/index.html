@@ -6,11 +6,25 @@
             * {
                 margin: 0;
                 padding: 0;
+                height: 100%;
+
             }
 
             html {
-                --height: 100%;
-                --width: 100%;
+                --green: #01723A;
+                --grains: #FED700;
+                --beans: #BF2E1B;
+                --cruciferous: #A2CC3A;
+                --nuts: #C3872C;
+                --fruits: #E01A1B;
+                --flaxseed: #9A5023;
+                --vegetables: #F05922;
+                --berries: #0953AA;
+                --spices: #FFB146;
+                --b12: #E95755;
+                --sun: #F9B609;
+                --excercise: #2A2B2D;
+                --beverages: #01B0B3;
             }
 
             body {
@@ -35,24 +49,18 @@
             }
 
             .row-1-col-1{
-                height: 100%;
                 width: 35%;
-                display: inline-block;
-                background-color: #01723A;
+                background-color: var(--green);
             }
 
             .row-1-col-2{
-                height: 100%;
                 width: 30%;
-                display: inline-block;
-                background-color: #FED700;
+                background-color: var(--grains);
             }
 
             .row-1-col-3{
-                height: 100%;
                 width: 35%;
-                display: inline-block;
-                background-color: #BF2E1B;
+                background-color: var(--beans);
             }
 
             .row-2{
@@ -60,108 +68,82 @@
             }
 
             .row-2-col-1{
-                height: 100%;
                 width: 60%;
-                display: inline-block;
             }
 
             .row-2-col-1-col-1{
-                height: 100%;
                 width: 40%;
-                display: inline-block;
             }
 
             .row-2-col-1-col-1-row-1{
                 height: 70%;
-                width: 100%;
-                background-color: #A2CC3A;
+                background-color: var(--cruciferous);
             }
 
             .row-2-col-1-col-1-row-2{
                 height: 30%;
-                width: 100%;
-                background-color: #C3872C;
+                background-color: var(--nuts);
             }
 
             .row-2-col-1-col-2{
-                height: 100%;
                 width: 60%;
-                display: inline-block;
             }
 
             .row-2-col-1-col-2-row-1{
                 height: 20%;
-                width: 100%;
-                background-color: #A2CC3A;
+                background-color: var(--cruciferous);
             }
 
             .row-2-col-1-col-2-row-2{
                 height: 60%;
-                width: 100%;
-                background-color: #E01A1B;
+                background-color: var(--fruits);
             }
 
             .row-2-col-1-col-2-row-3{
                 height: 20%;
-                width: 100%;
-                background-color: #9A5023;
+                background-color: var(--flaxseed);
             }
 
             .row-2-col-2{
-                height: 100%;
                 width: 40%;
-                display: inline-block;
             }
 
             .row-2-col-2-row-1{
                 height: 30%;
-                width: 100%;
-                background-color: #F05922;
+                background-color: var(--vegetables);
             }
 
             .row-2-col-2-row-2{
                 height: 50%;
-                width: 100%;
             }
 
             .row-2-col-2-row-2-col-1{
-                height: 100%;
                 width: 50%;
-                display: inline-block;
-                background-color: #F05922;
+                background-color: var(--vegetables);
             }
 
             .row-2-col-2-row-2-col-2{
-                height: 100%;
                 width: 50%;
-                display: inline-block;
-                background-color: #0953AA;
+                background-color: var(--berries);
             }
 
             .row-2-col-2-row-3{
                 height: 20%;
-                width: 100%;
             }
 
             .row-2-col-2-row-3-col-1{
-                height: 100%;
                 width: 33.33%;
-                display: inline-block;
-                background-color: #FFB146;
+                background-color: var(--spices);
             }
 
             .row-2-col-2-row-3-col-2{
-                height: 100%;
                 width: 33.33%;
-                display: inline-block;
-                background-color: #E95755;
+                background-color: var(--b12);
             }
 
             .row-2-col-2-row-3-col-3{
-                height: 100%;
                 width: 33.33%;
-                display: inline-block;
-                background-color: #F9B609;
+                background-color: var(--sun);
             }
 
             .row-3{
@@ -169,17 +151,17 @@
             }
 
             .row-3-col-1{
-                height: 100%;
                 width: 50%;
-                display: inline-block;
-                background-color: #2A2B2D;
+                background-color: var(--excercise);
             }
 
             .row-3-col-2{
-                height: 100%;
                 width: 50%;
+                background-color: var(--beverages);
+            }
+
+            .inline{
                 display: inline-block;
-                background-color: #01B0B3;
             }
 
         </style>
@@ -188,40 +170,40 @@
     <body>
         <main>
             <div class="row-1">
-                <div class="row-1-col-1"></div>
-                <div class="row-1-col-2"></div>
-                <div class="row-1-col-3"></div>
+                <div class="row-1-col-1 inline"></div>
+                <div class="row-1-col-2 inline"></div>
+                <div class="row-1-col-3 inline"></div>
             </div>
             <div class="row-2">
 
-                <div class="row-2-col-1">
-                    <div class="row-2-col-1-col-1">
+                <div class="row-2-col-1 inline">
+                    <div class="row-2-col-1-col-1 inline">
                         <div class="row-2-col-1-col-1-row-1"></div>
                         <div class="row-2-col-1-col-1-row-2" ></div>
                     </div>
-                    <div class="row-2-col-1-col-2">
+                    <div class="row-2-col-1-col-2 inline">
                         <div class="row-2-col-1-col-2-row-1"></div>
                         <div class="row-2-col-1-col-2-row-2"></div>
                         <div class="row-2-col-1-col-2-row-3"></div>
                     </div>
                 </div>
 
-                <div class="row-2-col-2">
+                <div class="row-2-col-2 inline">
                     <div class="row-2-col-2-row-1"></div>
                     <div class="row-2-col-2-row-2">
-                        <div class="row-2-col-2-row-2-col-1"></div>
-                        <div class="row-2-col-2-row-2-col-2"></div>
+                        <div class="row-2-col-2-row-2-col-1 inline"></div>
+                        <div class="row-2-col-2-row-2-col-2 inline"></div>
                     </div>
                     <div class="row-2-col-2-row-3">
-                        <div class="row-2-col-2-row-3-col-1"></div>
-                        <div class="row-2-col-2-row-3-col-2"></div>
-                        <div class="row-2-col-2-row-3-col-3"></div>
+                        <div class="row-2-col-2-row-3-col-1 inline"></div>
+                        <div class="row-2-col-2-row-3-col-2 inline"></div>
+                        <div class="row-2-col-2-row-3-col-3 inline"></div>
                     </div>
                 </div>
             </div>
             <div class="row-3" >
-                <div class="row-3-col-1"></div>
-                <div class="row-3-col-2"></div>
+                <div class="row-3-col-1 inline"></div>
+                <div class="row-3-col-2 inline"></div>
             </div>
         </main>
     </body>
