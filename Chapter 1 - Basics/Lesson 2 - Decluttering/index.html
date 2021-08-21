@@ -1,69 +1,227 @@
 <!DOCTYPE html>
 
 <html>
-    <head></head>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
 
-    <body style="width: 100vw; height: 100vh; background-color: #FD9; display: flex; align-items: center; justify-content: center;">
-        <main style="width: 75vh; height: 75vh; background-color: #CDE; border-radius: 5%; font-size: 0;">
-            <!-- added `font-size: 0;` to the parent element's style attribute to let its children enjoy nice size percentages -->
-            <div class="row-1" style="height: 35%">
-                <div class="row-1-col-1" style="height: 100%; width: 35%; display: inline-block; background-color: #01723A;"></div>
-                <div class="row-1-col-2" style="height: 100%; width: 30%; display: inline-block; background-color: #FED700;"></div>
-                <div class="row-1-col-3" style="height: 100%; width: 35%; display: inline-block; background-color: #BF2E1B;"></div>
+            html {
+                --height: 100%;
+                --width: 100%;
+            }
+
+            body {
+                width: 100vw;
+                height: 100vh;
+                background-color: #FD9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            main {
+                width: 75vh;
+                height: 75vh;
+                background-color: #CDE;
+                border-radius: 5%;
+                font-size: 0;
+            }
+
+            .row-1{
+                height: 35%;
+            }
+
+            .row-1-col-1{
+                height: 100%;
+                width: 35%;
+                display: inline-block;
+                background-color: #01723A;
+            }
+
+            .row-1-col-2{
+                height: 100%;
+                width: 30%;
+                display: inline-block;
+                background-color: #FED700;
+            }
+
+            .row-1-col-3{
+                height: 100%;
+                width: 35%;
+                display: inline-block;
+                background-color: #BF2E1B;
+            }
+
+            .row-2{
+                height: 45%;
+            }
+
+            .row-2-col-1{
+                height: 100%;
+                width: 60%;
+                display: inline-block;
+            }
+
+            .row-2-col-1-col-1{
+                height: 100%;
+                width: 40%;
+                display: inline-block;
+            }
+
+            .row-2-col-1-col-1-row-1{
+                height: 70%;
+                width: 100%;
+                background-color: #A2CC3A;
+            }
+
+            .row-2-col-1-col-1-row-2{
+                height: 30%;
+                width: 100%;
+                background-color: #C3872C;
+            }
+
+            .row-2-col-1-col-2{
+                height: 100%;
+                width: 60%;
+                display: inline-block;
+            }
+
+            .row-2-col-1-col-2-row-1{
+                height: 20%;
+                width: 100%;
+                background-color: #A2CC3A;
+            }
+
+            .row-2-col-1-col-2-row-2{
+                height: 60%;
+                width: 100%;
+                background-color: #E01A1B;
+            }
+
+            .row-2-col-1-col-2-row-3{
+                height: 20%;
+                width: 100%;
+                background-color: #9A5023;
+            }
+
+            .row-2-col-2{
+                height: 100%;
+                width: 40%;
+                display: inline-block;
+            }
+
+            .row-2-col-2-row-1{
+                height: 30%;
+                width: 100%;
+                background-color: #F05922;
+            }
+
+            .row-2-col-2-row-2{
+                height: 50%;
+                width: 100%;
+            }
+
+            .row-2-col-2-row-2-col-1{
+                height: 100%;
+                width: 50%;
+                display: inline-block;
+                background-color: #F05922;
+            }
+
+            .row-2-col-2-row-2-col-2{
+                height: 100%;
+                width: 50%;
+                display: inline-block;
+                background-color: #0953AA;
+            }
+
+            .row-2-col-2-row-3{
+                height: 20%;
+                width: 100%;
+            }
+
+            .row-2-col-2-row-3-col-1{
+                height: 100%;
+                width: 33.33%;
+                display: inline-block;
+                background-color: #FFB146;
+            }
+
+            .row-2-col-2-row-3-col-2{
+                height: 100%;
+                width: 33.33%;
+                display: inline-block;
+                background-color: #E95755;
+            }
+
+            .row-2-col-2-row-3-col-3{
+                height: 100%;
+                width: 33.33%;
+                display: inline-block;
+                background-color: #F9B609;
+            }
+
+            .row-3{
+                height: 20%
+            }
+
+            .row-3-col-1{
+                height: 100%;
+                width: 50%;
+                display: inline-block;
+                background-color: #2A2B2D;
+            }
+
+            .row-3-col-2{
+                height: 100%;
+                width: 50%;
+                display: inline-block;
+                background-color: #01B0B3;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <div class="row-1">
+                <div class="row-1-col-1"></div>
+                <div class="row-1-col-2"></div>
+                <div class="row-1-col-3"></div>
             </div>
-            <div class="row-2" style="height: 45%">
+            <div class="row-2">
 
-                <div class="row-2-col-1" style="height: 100%; width: 60%; display: inline-block;">
-                    <div class="row-2-col-1-col-1" style="height: 100%; width: 40%; display: inline-block;">
-                        <div class="row-2-col-1-col-1-row-1" style="height: 70%; width: 100%; background-color: #A2CC3A">
-
-                        </div>
-                        <div class="row-2-col-1-col-1-row-2" style="height: 30%; width: 100%; background-color: #C3872C">
-
-                        </div>
+                <div class="row-2-col-1">
+                    <div class="row-2-col-1-col-1">
+                        <div class="row-2-col-1-col-1-row-1"></div>
+                        <div class="row-2-col-1-col-1-row-2" ></div>
                     </div>
-                    <div class="row-2-col-1-col-2" style="height: 100%; width: 60%; display: inline-block;">
-                        <div class="row-2-col-1-col-2-row-1" style="height: 20%; width: 100%; background-color: #A2CC3A">
-
-                        </div>
-                        <div class="row-2-col-1-col-2-row-2" style="height: 60%; width: 100%; background-color: #E01A1B">
-
-                        </div>
-                        <div class="row-2-col-1-col-2-row-3" style="height: 20%; width: 100%; background-color: #9A5023">
-
-                        </div>
+                    <div class="row-2-col-1-col-2">
+                        <div class="row-2-col-1-col-2-row-1"></div>
+                        <div class="row-2-col-1-col-2-row-2"></div>
+                        <div class="row-2-col-1-col-2-row-3"></div>
                     </div>
                 </div>
 
-                <div class="row-2-col-2" style="height: 100%; width: 40%; display: inline-block;">
-                    <div class="row-2-col-2-row-1" style="height: 30%; width: 100%; background-color: #F05922;">
-
+                <div class="row-2-col-2">
+                    <div class="row-2-col-2-row-1"></div>
+                    <div class="row-2-col-2-row-2">
+                        <div class="row-2-col-2-row-2-col-1"></div>
+                        <div class="row-2-col-2-row-2-col-2"></div>
                     </div>
-
-                    <div class="row-2-col-2-row-1" style="height: 50%; width: 100%;">
-                        <div class="row-2-col-2-row-1-col-1" style="height: 100%; width: 50%; display: inline-block; background-color: #F05922;">
-
-                        </div>
-                        <div class="row-2-col-2-row-1-col-2" style="height: 100%; width: 50%; display: inline-block; background-color: #0953AA;">
-
-                        </div>
-                    </div>
-                    <div class="row-2-col-2-row-3" style="height: 20%; width: 100%;">
-                        <div class="row-2-col-2-row-1-col-1" style="height: 100%; width: 33.33%; display: inline-block; background-color: #FFB146;">
-
-                        </div>
-                        <div class="row-2-col-2-row-1-col-2" style="height: 100%; width: 33.33%; display: inline-block; background-color: #E95755;">
-
-                        </div>
-                        <div class="row-2-col-2-row-1-col-3" style="height: 100%; width: 33.33%; display: inline-block; background-color: #F9B609;">
-
-                        </div>
+                    <div class="row-2-col-2-row-3">
+                        <div class="row-2-col-2-row-3-col-1"></div>
+                        <div class="row-2-col-2-row-3-col-2"></div>
+                        <div class="row-2-col-2-row-3-col-3"></div>
                     </div>
                 </div>
             </div>
-            <div class="row-3" style="height: 20%">
-                <div class="row-3-col-1" style="height: 100%; width: 50%; display: inline-block; background-color: #2A2B2D;"></div>
-                <div class="row-3-col-2" style="height: 100%; width: 50%; display: inline-block; background-color: #01B0B3;"></div>
+            <div class="row-3" >
+                <div class="row-3-col-1"></div>
+                <div class="row-3-col-2"></div>
             </div>
         </main>
     </body>
