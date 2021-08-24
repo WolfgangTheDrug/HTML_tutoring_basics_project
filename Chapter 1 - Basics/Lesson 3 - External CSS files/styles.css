@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    --green: #01723A;
+    --grains: #FED700;
+    --beans: #BF2E1B;
+    --cruciferous: #A2CC3A;
+    --nuts: #C3872C;
+    --fruits: #E01A1B;
+    --flaxseed: #9A5023;
+    --vegetables: #F05922;
+    --berries: #0953AA;
+    --spices: #FFB146;
+    --b12: #E95755;
+    --sun: #F9B609;
+    --excercise: #2A2B2D;
+    --beverages: #01B0B3;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FD9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main  {
+    width: 75vh;
+    height: 75vh;
+    background-color: #CDE;
+    border-radius: 5%;
+    font-size: 0;
+}
+
+.row-1 {
+    height: 35%;
+}
+
+.row-1 > .col-1 {
+    width: 35%;
+    background-color: var(--green);
+}
+
+.row-1 > .col-2 {
+    width: 30%;
+    background-color: var(--grains);
+}
+
+.row-1 > .col-3 {
+    width: 35%;
+    background-color: var(--beans);
+}
+
+.row-2 {
+    height: 45%;
+}
+
+.row-2 > .col-1 {
+    width: 60%;
+}
+
+.row-2 > .col-1 > .col-1 {
+    width: 40%;
+}
+
+.row-2 > .col-1 > .col-1 > .row-1 {
+    height: 70%;
+    background-color: var(--cruciferous);
+}
+
+.row-2 > .col-1 > .col-1 > .row-2 {
+    height: 30%;
+    background-color: var(--nuts);
+}
+
+.row-2 > .col-1 > .col-2 {
+    width: 60%;
+}
+
+.row-2 > .col-1 > .col-2 > .row-1 {
+    height: 20%;
+    background-color: var(--cruciferous);
+}
+
+.row-2 > .col-1 > .col-2 > .row-2 {
+    height: 60%;
+    background-color: var(--fruits);
+}
+
+.row-2 > .col-1 > .col-2 > .row-3 {
+    height: 20%;
+    background-color: var(--flaxseed);
+}
+
+.row-2 > .col-2 {
+    width: 40%;
+}
+
+.row-2 > .col-2 > .row-1 {
+    height: 30%;
+    background-color: var(--vegetables);
+}
+
+.row-2 > .col-2 > .row-2 {
+    height: 50%;
+}
+
+.row-2 > .col-2 > .row-2 > .col-1 {
+    width: 50%;
+    background-color: var(--vegetables);
+}
+
+.row-2 > .col-2 > .row-2 > .col-2 {
+    width: 50%;
+    background-color: var(--berries);
+}
+
+.row-2 > .col-2 > .row-3 {
+    height: 20%;
+}
+
+.row-2 > .col-2 > .row-3 > .col-1 {
+    width: 33.33%;
+    background-color: var(--spices);
+}
+
+.row-2 > .col-2 > .row-3 > .col-2 {
+    width: 33.33%;
+    background-color: var(--b12);
+}
+
+.row-2 > .col-2 > .row-3 > .col-3 {
+    width: 33.33%;
+    background-color: var(--sun);
+}
+
+.row-3 {
+    height: 20%
+}
+
+.row-3 > .col-1 {
+    width: 50%;
+    background-color: var(--excercise);
+}
+
+.row-3 > .col-2 {
+    width: 50%;
+    background-color: var(--beverages);
+}
+
+.col-1, .col-2, .col-3 {
+    display: inline-block;
+}
