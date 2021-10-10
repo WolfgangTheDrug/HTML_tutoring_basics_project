@@ -1,4 +1,4 @@
-* {
+*:not(P) {
   margin: 0;
   padding: 0;
   border: 2px solid black;
@@ -57,17 +57,25 @@ main::after {
   z-index: 0;
   padding: 1%;
 }
-
+.fore-head {
+  width: 100%;
+  height: 22.5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 0;
+  border: none;
+}
 .hair {
   width: 95%;
-  height: 7%;
+  height: 50%;
   padding: 1%;
   display: flex;
   justify-content: space-around;
   background-color: grey;
   align-self: flex-start;
   z-index: 0;
-
+  align-items: center;
 }
 
 .fringe {
@@ -79,7 +87,7 @@ main::after {
 .face {
   border: none;
   z-index: 0;
-
+  height: 30%;
 }
 .eyebrows {
   display: flex;
@@ -90,6 +98,7 @@ main::after {
   border: none;
   z-index: 5;
 }
+
 .left-eyebrow,
 .right-eyebrow {
   height: 40px;
@@ -110,7 +119,7 @@ main::after {
 .eyes {
   border: none;
   width: 400px;
-  height: 150px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -124,7 +133,54 @@ main::after {
   background-color: white;
 }
 
+.nose {
+  position: relative;
+  width: 54px;
+  height: 20%;
+  box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: red transparent;
+}
+.nose:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent red;
+}
+/* .mouth {
+  border: none;
+} */
 .mouth {
-  height: 100px;
+  border-bottom: 100px solid blue;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: none;
+  height: 17.5%;
   width: 100px;
+}
+
+.chin {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border: none;
+}
+.skrew {
+  width: 2.5vh;
+  height: 40%;
+  border-radius: 50%;
+  background-color: grey;
+  color: black;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
