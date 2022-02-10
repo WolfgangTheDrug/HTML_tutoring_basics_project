@@ -87,13 +87,13 @@ main::after {
 .face {
   border: none;
   z-index: 0;
-  height: 30%;
+  height: 40%;
 }
 .eyebrows {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 200px;
+  height: 120px;
   width: 400px;
   border: none;
   z-index: 5;
@@ -122,21 +122,22 @@ main::after {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   transform: translate(0, -100px);
   z-index: 4;
 }
 .left-eye,
 .right-eye {
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
   background-color: white;
+  margin: 0 20px 0 20px
 }
 
 .nose {
   position: relative;
   width: 54px;
-  height: 20%;
+  height: 0%;
   box-sizing: content-box;
   border-width: 50px 18px 0;
   border-style: solid;
