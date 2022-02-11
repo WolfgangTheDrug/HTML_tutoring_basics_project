@@ -4,3 +4,31 @@
     background-color: white;
     color: black;
 }
+:root {
+    --small-screen-min-width:   350px;
+    --small-screen-max-width:   768px;
+    --small-screen-min-height:  650px;
+    --small-screen-max-height:  915px;
+
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    /* gradient for background */
+    /* center the children with flexbox*/
+}
+
+main.device-layout {
+    width: 50vh;
+    height: 90vh;
+    background-color: black;
+    /* add shadow to make it look more 3d */
+    /* maybe border radius? */
+}
+
+@media only screen and (min-width: var(--small-screen-max-width)) {
+   main.device-layout {
+       width: var(--small-screen-max-width);
+       height: var(--small-screen-max-height);
+   }
+}
