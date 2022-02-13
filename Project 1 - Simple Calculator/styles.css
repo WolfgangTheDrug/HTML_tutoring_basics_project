@@ -15,20 +15,105 @@ body {
     width: 100vw;
     height: 100vh;
     /* gradient for background */
-    /* center the children with flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(42,191,0);
+    background: linear-gradient(106deg,
+        rgba(42,191,0,1) 0%,
+        rgba(0,198,86,1) 53%,
+        rgba(0,215,195,1) 100%);
 }
 
 main.device-layout {
     width: 50vh;
     height: 90vh;
     background-color: black;
+    display: flex;
+    flex-direction: column;
     /* add shadow to make it look more 3d */
     /* maybe border radius? */
 }
+.screen {
+    height: 40vh;
+}
+.buttons {
+    height: 50vh;
+    display: grid;
+    grid-template:
+        "_7 _8 _9 PM DL"
+        "_4 _5 _6 MP DV"
+        "_1 _2 _3 MN EQ"
+        "AC _0 DT PL EQ"
+}
 
-@media only screen and (min-width: var(--small-screen-max-width)) {
-   main.device-layout {
-       width: var(--small-screen-max-width);
-       height: var(--small-screen-max-height);
-   }
+button {
+    background: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+._0 {
+    grid-area: _0;
+}
+._1 {
+    grid-area: _1;
+}
+._2 {
+    grid-area: _2;
+}
+._3 {
+    grid-area: _3;
+}
+._4 {
+    grid-area: _4;
+}
+._5 {
+    grid-area: _5;
+}
+._6 {
+    grid-area: _6;
+}
+._7 {
+    grid-area: _7;
+}
+._8 {
+    grid-area: _8;
+}
+._9 {
+    grid-area: _9;
+}
+.DT {
+    grid-area: DT;
+}
+.PL {
+    grid-area: PL;
+}
+.MN {
+    grid-area: MN;
+}
+.MP {
+    grid-area: MP;
+}
+.DV {
+    grid-area: DV;
+}
+.PM {
+    grid-area: PM;
+}
+.DV {
+    grid-area: DV;
+}
+.DL {
+    grid-area: DL;
+}
+.AC {
+    grid-area: AC;
+}
+.EQ {
+    grid-area: EQ;
 }
