@@ -3,6 +3,7 @@
     padding: 0;
     background-color: white;
     color: black;
+    font-size: 1.25rem;
 }
 :root {
     --small-screen-min-width:   350px;
@@ -20,9 +21,9 @@ body {
     align-items: center;
     background: rgb(42,191,0);
     background: linear-gradient(106deg,
-        rgba(42,191,0,1) 0%,
-        rgba(0,198,86,1) 53%,
-        rgba(0,215,195,1) 100%);
+        rgb(42,191,0) 0%,
+        rgb(0,198,86) 53%,
+        rgb(0,215,195) 100%);
 }
 
 main.device-layout {
@@ -32,9 +33,12 @@ main.device-layout {
     display: flex;
     flex-direction: column;
     /* add shadow to make it look more 3d */
+    -webkit-box-shadow: 0px 0px 37px 1px rgba(0, 2, 107, 0.56);
+    -moz-box-shadow: 0px 0px 37px 1px rgba(0, 2, 107, 0.56);
+    box-shadow: 0px 0px 37px 1px rgba(0, 2, 107, 0.56);
     /* maybe border radius? */
 }
-.screen {
+.screen-box {
     height: 40vh;
 }
 .buttons {
@@ -44,76 +48,82 @@ main.device-layout {
         "_7 _8 _9 PM DL"
         "_4 _5 _6 MP DV"
         "_1 _2 _3 MN EQ"
-        "AC _0 DT PL EQ"
+        "AC _0 DT PL EQ";
 }
 
 button {
     background: none;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: white;
     border: none;
 }
 
 button:hover {
-    background-color: rgba(0, 0, 0, .25);
+    background-color: hsl(0, 0%, 75%);
+    cursor: pointer;
 }
 
-._0 {
+#_0 {
     grid-area: _0;
 }
-._1 {
+#_1 {
     grid-area: _1;
 }
-._2 {
+#_2 {
     grid-area: _2;
 }
-._3 {
+#_3 {
     grid-area: _3;
 }
-._4 {
+#_4 {
     grid-area: _4;
 }
-._5 {
+#_5 {
     grid-area: _5;
 }
-._6 {
+#_6 {
     grid-area: _6;
 }
-._7 {
+#_7 {
     grid-area: _7;
 }
-._8 {
+#_8 {
     grid-area: _8;
 }
-._9 {
+#_9 {
     grid-area: _9;
 }
-.DT {
+#DT {
     grid-area: DT;
 }
-.PL {
+#PL {
     grid-area: PL;
 }
-.MN {
+#MN {
     grid-area: MN;
 }
-.MP {
+#MP {
     grid-area: MP;
 }
-.DV {
+#DV {
     grid-area: DV;
 }
-.PM {
+#PM {
     grid-area: PM;
 }
-.DV {
+#DV {
     grid-area: DV;
 }
-.DL {
+#DL {
     grid-area: DL;
+    background-color: hsl(0, 70%, 75%);
 }
-.AC {
+#AC {
     grid-area: AC;
+    background-color: hsl(0, 70%, 75%);
 }
-.EQ {
+#AC:hover, #DL:hover {
+    background-color: hsl(0, 70%, 50%);;
+}
+#EQ {
     grid-area: EQ;
 }
