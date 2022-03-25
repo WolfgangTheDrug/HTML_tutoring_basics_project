@@ -23,11 +23,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(42,191,0);
-    background: linear-gradient(106deg,
-        rgb(42,191,0) 0%,
-        rgb(0,198,86) 53%,
-        rgb(0,215,195) 100%);
+
+	  -webkit-animation: bg-anim 1s ease-in-out infinite alternate both;
+	          animation: bg-anim 1s ease-in-out infinite alternate both;
 }
 
 main.device-layout {
@@ -148,4 +146,42 @@ button:hover {
 }
 #EQ {
     grid-area: EQ;
+}
+
+
+@-webkit-keyframes bg-anim {
+  0% {
+    background: rgb(199,143,255);
+    background: linear-gradient(90deg,
+              rgb(199,143,255) 0%,
+              rgb(199,75,150) 10%,
+              rgb(203,74,129) 100%
+            );
+  }
+  100% {
+    background: rgb(199,143,255);
+    background: linear-gradient(270deg,
+              rgb(199,143,255) 0%,
+              rgb(199,75,150) 90%,
+              rgb(203,74,129) 100%
+            );
+  }
+}
+@keyframes bg-anim {
+  0% {
+    background: rgb(199,143,255);
+    background: linear-gradient(90deg,
+              rgb(199,143,255) 0%,
+              rgb(199,75,150) 10%,
+              rgb(203,74,129) 100%
+            );
+  }
+  100% {
+    background: rgb(199,143,255);
+    background: linear-gradient(270deg,
+              rgb(199,143,255) 0%,
+              rgb(199,75,150) 90%,
+              rgb(203,74,129) 100%
+            );
+  }
 }
