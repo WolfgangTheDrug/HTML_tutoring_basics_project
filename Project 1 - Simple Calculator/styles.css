@@ -19,13 +19,20 @@
 body {
     width: 100vw;
     height: 100vh;
-    /* gradient for background */
     display: flex;
     justify-content: center;
     align-items: center;
 
-	  -webkit-animation: bg-anim 1s ease-in-out infinite alternate both;
-	          animation: bg-anim 1s ease-in-out infinite alternate both;
+    background: rgb(199,143,255);
+    background: linear-gradient(45deg,
+      rgb(199,143,255) 0%,
+      rgb(255,139,209) 25%,
+      rgb(233,241,154) 50%,
+      rgb(117,226,192) 75%,
+      rgb(74,116,203) 100%);
+    background-size: 400% 400%;
+	  -webkit-animation: bg-anim 30s ease-in-out infinite alternate both;
+	          animation: bg-anim 30s ease-in-out infinite alternate both;
 }
 
 main.device-layout {
@@ -64,11 +71,12 @@ main.device-layout {
 .buttons {
     height: 50vh;
     display: grid;
-    grid-template:
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
         "_7 _8 _9 PM DL"
-        "_4 _5 _6 MP DV"
-        "_1 _2 _3 MN EQ"
-        "AC _0 DT PL EQ";
+        "_4 _5 _6 DV MP"
+        "_1 _2 _3 PL EQ"
+        "AC _0 DO MN EQ";
 }
 
 button {
@@ -151,37 +159,23 @@ button:hover {
 
 @-webkit-keyframes bg-anim {
   0% {
-    background: rgb(199,143,255);
-    background: linear-gradient(90deg,
-              rgb(199,143,255) 0%,
-              rgb(199,75,150) 10%,
-              rgb(203,74,129) 100%
-            );
-  }
-  100% {
-    background: rgb(199,143,255);
-    background: linear-gradient(270deg,
-              rgb(199,143,255) 0%,
-              rgb(199,75,150) 90%,
-              rgb(203,74,129) 100%
-            );
-  }
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 @keyframes bg-anim {
   0% {
-    background: rgb(199,143,255);
-    background: linear-gradient(90deg,
-              rgb(199,143,255) 0%,
-              rgb(199,75,150) 10%,
-              rgb(203,74,129) 100%
-            );
-  }
-  100% {
-    background: rgb(199,143,255);
-    background: linear-gradient(270deg,
-              rgb(199,143,255) 0%,
-              rgb(199,75,150) 90%,
-              rgb(203,74,129) 100%
-            );
-  }
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
