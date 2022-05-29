@@ -1,1 +1,120 @@
-p {}
+* {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+html {
+  --greens: #01723A;
+  --grains: #FED700;
+  --beans: #BF2E1B;
+  --cruciferous: #A2CC3A;
+  --nuts: #C3872C;
+  --fruits: #E01A1B;
+  --flaxseed: #9A5023;
+  --vegetables: #F05922;
+  --berries: #0953AA;
+  --spices: #FFB146;
+  --b12: #E95755;
+  --sun: #F9B609;
+  --excercise: #2A2B2D;
+  --beverages: #01B0B3;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FD9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body * {
+  border-radius: 5px;
+}
+main {
+  width: 75vh;
+  height: 75vh;
+  padding: 2%;
+  background-color: #CDE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+}
+main * {
+  height: auto;
+}
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+}
+section *:not(p) {
+  width: 100%
+}
+
+.row1{
+  flex-grow: 11;
+}
+.row2 {
+  flex-grow: 13
+}
+.row3{
+  flex-grow: 6;
+}
+
+article {
+  width: 100%
+  display: flex;
+  flex-direction: column;
+}
+
+
+.greens {
+	background-color: var(--greens);
+}
+.grains {
+	background-color: var(--grains);
+}
+.beans {
+	background-color: var(--beans);
+}
+.cruciferous {
+	background-color: var(--cruciferous);
+}
+.fruits-1, .fruits-2 {
+	background-color: var(--fruits);
+  width: 60%;
+  height: 80%;
+  align-self: flex-end;
+}
+.nuts {
+	background-color: var(--nuts);
+}
+.flaxseed {
+	background-color: var(--flaxseed);
+}
+.vegetables {
+	background-color: var(--vegetables);
+}
+.berries {
+	background-color: var(--berries);
+}
+.spices {
+	background-color: var(--spices);
+}
+.b12 {
+	background-color: var(--b12);
+}
+.sun {
+	background-color: var(--sun);
+}
+.excercise {
+	background-color: var(--excercise);
+}
+.beverages {
+	background-color: var(--beverages);
+}
