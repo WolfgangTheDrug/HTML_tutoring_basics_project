@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   height: 100%;
+  color: white;
+  font-size: 15px;
+  font-family: 'Righteous', cursive;
+  text-align: right;
 }
 html {
   --greens: #01723A;
@@ -65,13 +69,23 @@ section *:not(p) {
 .row3{
   flex-grow: 6;
 }
-
 article {
-  width: 100%
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
-
+.top-left-section {
+  height: 60%;
+}
+.bottom-left-section {
+  height: 40%;
+}
+.top-right-section {
+  height: 80%;
+}
+.bottom-right-section {
+  height: 20%;
+}
 
 .greens {
 	background-color: var(--greens);
@@ -84,24 +98,42 @@ article {
 }
 .cruciferous {
 	background-color: var(--cruciferous);
+  display: flex;
+  flex-direction: column;
 }
+
+
 .fruits-1, .fruits-2 {
 	background-color: var(--fruits);
   width: 60%;
   height: 80%;
   align-self: flex-end;
+  justify-self: flex-end;
+}
+.fruits-1 {
+  width: 67%;
+}
+.fruits-2 {
+  width: 100%;
 }
 .nuts {
+  height: 100%;
 	background-color: var(--nuts);
 }
 .flaxseed {
 	background-color: var(--flaxseed);
+  height: 20%;
 }
 .vegetables {
 	background-color: var(--vegetables);
+  display: flex;
+  flex-direction: column;
 }
 .berries {
 	background-color: var(--berries);
+  height: 80%;
+  width: 60%;
+  align-self: flex-end;
 }
 .spices {
 	background-color: var(--spices);
@@ -117,4 +149,9 @@ article {
 }
 .beverages {
 	background-color: var(--beverages);
+}
+p {
+  height: 20%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
